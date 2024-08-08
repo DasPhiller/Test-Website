@@ -2,13 +2,41 @@ html {
   height: 100%;
   width: 100%;
 }
-img {
+.image-container {
+  position: relative;
+  display: inline-block;  
+}
+.image-pb {
   width: 200px;
-
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+.image-link:hover .image-ob {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0,0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-link:hover .hover-text {
+  opacity: 1;
+}
+.image-git {
+  width: 30px;
 }
 body {
   text-align: center;
   font-family: 'Arial';
   background: azure;
   color: blue;
+  
 }
